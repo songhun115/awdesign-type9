@@ -16,19 +16,42 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-  (function(d) {
-    var config = {
-      kitId: 'ptl6von',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
+        (function (d) {
+            var config = {
+                kitId: 'ptl6von',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 <body>
-    <main class="main">
+    <header id="header">
+        <div class="header-wrap">
+            <div class="logo">
+                <a href="index.html"><img src="img/common/logo.png" alt=""></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#">풍경</a>
+                    </li>
+                    <li>
+                        <a href="#">머무르다</a>
+                    </li>
+                    <li>
+                        <a href="#">마련하다</a>
+                    </li>
+                    <li>
+                        <a href="#">예약안내</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
         <section class="visual-area">
             <div class="box">
                 <div class="swiper visual-silder">
@@ -55,11 +78,16 @@
                             <div class="thumbnail"><img src="img/main/main-visual7.jpg" alt=""></div>
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <script>
                     var swiper = new Swiper(".visual-silder", {
-                        effect:'fade',
-                        loop:true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            type: "fraction",
+                        },
+                        effect: 'fade',
+                        loop: true,
                     });
                 </script>
                 <div class="txt">
@@ -68,7 +96,45 @@
                 </div>
             </div>
         </section>
-        <section></section>
+        <section class="room-reser">
+            <div class="box">
+                <div class="swiper room-rser-silder">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="thumbnail"><img src="img/main/room-reser1.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail"><img src="img/main/room-reser2.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail"><img src="img/main/room-reser3.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail"><img src="img/main/room-reser4.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".room-rser-silder", {
+                        pagination: {
+                            el: ".swiper-pagination",
+                            type: "fraction",
+                        },
+                        effect: 'fade',
+                        loop: true,
+                    });
+                </script>
+                <div class="txt">
+                    <h3>난생 처음 경험하는<br>시간과 공간을 선보입니다.</h3>
+                    <p>유연에서는 오롯이 자신에게 집중할 수 있는 특별한 시간을 제공합니다. <br>
+                        지금까지 한 번도 느껴본 적 없는 새로운 휴식을 경험해보세요.</p>
+                    <div class="reser-btn">
+                        <a href="#">객실예약 바로가기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section></section>
         <section></section>
         <section></section>

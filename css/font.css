@@ -1,64 +1,18 @@
 @font-face {
-    font-family: 'FelixTitling';
+    font-family: 'GowunBatang';
     font-weight: 400;
-    src: url('../font/Felix-Titling-MT-Std-Regular.woff') format('woff');
+    src: url('../font/GowunBatang-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'NotoSerifKR';
-    font-weight: 200;
-    src: url('../font/NotoSerifKR-Light.woff') format('woff');
-}
-@font-face {
-    font-family: 'NotoSerifKR';
-    font-weight: 400;
-    src: url('../font/NotoSerifKR-Regular.woff') format('woff');
-}
-@font-face {
-    font-family: 'NotoSerifKR';
-    font-weight: 500;
-    src: url('../font/NotoSerifKR-Medium.woff') format('woff');
-}
-@font-face {
-    font-family: 'NotoSerifKR';
-    font-weight: 600;
-    src: url('../font/NotoSerifKR-SemiBold.woff') format('woff');
-}
-@font-face {
-    font-family: 'NotoSerifKR';
+    font-family: 'GowunBatang';
     font-weight: 700;
-    src: url('../font/NotoSerifKR-Bold.woff') format('woff');
+    src: url('../font/GowunBatang-Bold.woff') format('woff');
 }
 
 
-
 @font-face {
-    font-family: 'Pretendard';
-    font-weight: 300;
-    src: url('../font/Pretendard-Light.woff') format('woff');
-}
-@font-face {
-    font-family: 'Pretendard';
-    font-weight: 400;
-    src: url('../font/Pretendard-Regular.woff') format('woff');
-}
-@font-face {
-    font-family: 'Pretendard';
+    font-family: "adobe-myungjo-std", sans-serif;
     font-weight: 500;
-    src: url('../font/Pretendard-Medium.woff') format('woff');
-}
-@font-face {
-    font-family: 'Pretendard';
-    font-weight: 600;
-    src: url('../font/Pretendard-SemiBold.woff') format('woff');
-}
-@font-face {
-    font-family: 'Pretendard';
-    font-weight: 700;
-    src: url('../font/Pretendard-Bold.woff') format('woff');
-}
-@font-face {
-    font-family: 'Pretendard';
-    font-weight: 800;
-    src: url('../font/Pretendard-Black.woff') format('woff');
+    font-style: normal;
 }

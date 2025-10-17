@@ -168,10 +168,12 @@ img{vertical-align: bottom;}
 .visual-area .box .txt h4{font-size: 30px; margin-bottom: 15px;}
 
 @media(max-width:1240px){
-    .visual-area .box .thumbnail img{height: 350px;}
+    .visual-area {height: auto;}
+    .visual-area .box .txt{width: 100%;}
+    .visual-area .box .thumbnail img{height: 550px;}
 }
 
-#map .map-info{padding:200px 0; background-color: #000; color: #fff;}
+#map .map-info{padding:200px 0; background-color: #141414; color: #fff;}
 #map .map-info .box{display: flex; gap: 100px; align-items: center; max-width: 1500px; margin: 0 auto;}
 #map .map-info .box .thumbnail {display: flex;}
 #map .map-info .box .thumbnail img {max-width: 745px; width: 100%;}
@@ -181,8 +183,28 @@ img{vertical-align: bottom;}
 
 
 @media(max-width:1240px){
+    #map .map-info{padding: 100px 0;}
     #map .map-info .box{flex-direction: column; align-items: flex-start; padding: 20px; gap: 30px;}
     #map .map-info .box .thumbnail{flex-direction: column;}
     #map .map-info .box .thumbnail .ver-txt{flex-direction: row; margin-left: 0;  margin-top: 30px; font-size: 24px;}
+    #map .map-info .box .txt p{font-size: 14px;}
     #map .map-info .box .txt span{margin-bottom: 15px;}
 }
+
+#map .map-area{background-color: #141414; }
+#map .map-area .box{max-width: 1500px; margin: 0 auto;}
+
+@media(max-width:1240px){
+    #map .map-area .box{padding: 20px; box-sizing: border-box;}
+    .root_daum_roughmap_landing{width: 100% !important; height: 350px;}
+}
+
+
+#tour .tour-area {padding:200px 0; background-color: #141414; color: #fff;}
+#tour .tour-area .box .tour-item{margin: 100px 0;}
+#tour .tour-area .box .tour-item .tour-box{display: flex; gap: 100px; align-items: center; max-width: 1500px; margin: 0 auto;}
+#tour .tour-area .box .tour-item .tour-box .thumbnail {display: flex;}
+#tour .tour-area .box .tour-item .tour-box .thumbnail img {max-width: 745px; width: 100%;}
+#tour .tour-area .box .tour-item .tour-box .thumbnail .ver-txt{display: flex; flex-direction: column; font-size: 30px; line-height: 1.1; margin-top: 40px; margin-left: 40px; font-weight: 200;}
+#tour .tour-area .box .tour-item .tour-box .txt span{font-size:14px ; margin-bottom: 30px;}
+#tour .tour-area .box .tour-item .tour-box .txt p{line-height: 1.5; font-family: 'Pretendard'; font-weight: 200;}

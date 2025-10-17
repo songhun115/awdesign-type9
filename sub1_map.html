@@ -60,7 +60,7 @@
                     <p>한 번도 경험해 본 적 없는 새로운 시간과 공간</p>
                 </div>
             </div>
-            
+
         </section>
         <section class="map-info">
             <div class="box">
@@ -82,6 +82,23 @@
                 </div>
             </div>
         </section>
+        <section class="map-area">
+            <div class="box">
+                <div id="daumRoughmapContainer1760680923808" class="root_daum_roughmap root_daum_roughmap_landing">
+                </div>
+                <script charset="UTF-8" class="daum_roughmap_loader_script"
+                    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp": "1760680923808",
+                        "key": "2cejpfnpc4ui",
+                        "mapWidth": "1500",
+                        "mapHeight": "750"
+                    }).render();
+                </script>
+            </div>
+        </section>
     </main>
     <footer id="footer">
         <div class="footer-wrap">
@@ -99,7 +116,7 @@
                     <li>
                         <a href="#">예약안내</a>
                     </li>
-                    
+
                 </ul>
             </div>
             <div class="logo"><img src="img/common/logo.png" alt=""></div>

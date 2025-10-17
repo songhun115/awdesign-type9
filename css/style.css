@@ -128,3 +128,16 @@ img{vertical-align: bottom;}
     .background-sec .box, .background-sec .box .thumbnail {height: 100%;}
     .background-sec .box .thumbnail img{height: 100%; object-fit: cover;}
 }
+.special-preview{padding: 200px 0; background-color: #000;}
+.special-preview .title {margin-bottom: 50px; text-align: center; color: #fff; }
+.special-preview .title h4{font-size: 40px;margin-bottom: 20px; font-weight: 400;}
+.special-preview .title h3{}
+.special-preview .special-silder .thumbnail img{width: 100%;}
+.special-preview .special-silder .swiper-slide{position: relative;}
+.special-preview .special-silder .swiper-slide .txt{position: absolute; top:50%; left: 50%;transform: translate(-50%,-50%); width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); color: #fff; display: flex; justify-content: center; align-items: center; font-size: 25px; opacity: 0; visibility: hidden; transition: 0.3s;}
+.special-preview .special-silder .swiper-slide-active .txt{opacity: 1; visibility: visible;}
+@media(max-width:1240px){
+    .special-preview{padding: 100px 0;}
+    .special-preview .title{margin-bottom: 30px;}
+    .special-preview .title h4{font-size: 24px; margin-bottom: 10px;}
+}

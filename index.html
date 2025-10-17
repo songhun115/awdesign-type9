@@ -135,7 +135,131 @@
                 </div>
             </div>
         </section>
-        <section></section>
+        <section class="room-preivew">
+            <div class="box">
+                <div class="title">
+                    <h4>머무르다</h4>
+                    <p>유연만의 감성이 가득 담긴 객실을 확인해보세요.</p>
+                </div>
+
+                <div class="slide-box">
+                    <div class="main-rooms">
+                        <div class="room room1 active">
+                            <div class="thumbnail "><img src="img/room/room-preview1.jpg" alt=""></div>
+                            <div class="disc">
+                                <div class="text">
+                                    <h5><b>梅 </b>매</h5>
+                                    <p>감성적인 인테리어가 돋보이는 <br class="pc-obj">
+                                        객실 매梅 입니다. <br>
+                                        객실의 우아한 매력에 취해보세요. </p>
+                                </div>
+
+                                <div class="detail">
+                                    <a href="#">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room room2">
+                            <div class="thumbnail "><img src="img/room/room-preview2.jpg" alt=""></div>
+                           <div class="disc">
+                                <div class="text">
+                                    <h5><b>梅 </b>매</h5>
+                                    <p>감성적인 인테리어가 돋보이는 <br class="pc-obj">
+                                        객실 매梅 입니다. <br>
+                                        객실의 우아한 매력에 취해보세요. </p>
+                                </div>
+
+                                <div class="detail">
+                                    <a href="#">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room room3">
+                            <div class="thumbnail "><img src="img/room/room-preview3.jpg" alt=""></div>
+                            <div class="disc">
+                                <div class="text">
+                                    <h5><b>梅 </b>매</h5>
+                                    <p>감성적인 인테리어가 돋보이는 <br class="pc-obj">
+                                        객실 매梅 입니다. <br>
+                                        객실의 우아한 매력에 취해보세요. </p>
+                                </div>
+
+                                <div class="detail">
+                                    <a href="#">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room room4">
+                            <div class="thumbnail "><img src="img/room/room-preview4.jpg" alt=""></div>
+                           <div class="disc">
+                                <div class="text">
+                                    <h5><b>梅 </b>매</h5>
+                                    <p>감성적인 인테리어가 돋보이는 <br class="pc-obj">
+                                        객실 매梅 입니다. <br>
+                                        객실의 우아한 매력에 취해보세요. </p>
+                                </div>
+
+                                <div class="detail">
+                                    <a href="#">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper rooms-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="thumbnail"><img src="img/room/room-preview1.jpg" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="thumbnail"><img src="img/room/room-preview2.jpg" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="thumbnail"><img src="img/room/room-preview3.jpg" alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="thumbnail"><img src="img/room/room-preview4.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const swiper3 = new Swiper('.rooms-slide', {
+                                slidesPerView: 2.2,
+                                spaceBetween: 20,
+                                breakpoints: {
+                                    1240: { slidesPerView: 2.2, spaceBetween: 40 },
+                                },
+                                loop: true,
+                                observer: true,
+                                observeParents: true,
+                            });
+
+                            const thumbs = document.querySelectorAll('.main-rooms .room');
+
+                            function syncThumb() {
+                                const i = swiper3.realIndex; // 0,1,2,3 ...
+                                thumbs.forEach(el => el.classList.remove('active'));
+                                if (thumbs[i]) thumbs[i].classList.add('active');
+                            }
+
+                            // 초기/변경 시 동기화
+                            swiper3.on('init', syncThumb);
+                            swiper3.on('slideChange', syncThumb);
+                            // 이미 생성되어 있으면 init 이벤트가 안 불릴 수 있으니 한 번 호출
+                            syncThumb();
+
+                            // (옵션) 썸네일 클릭 시 해당 슬라이드로 이동
+                            thumbs.forEach((el, idx) => {
+                                el.addEventListener('click', () => {
+                                    // loop 사용 시 slideToLoop로 정확히 이동
+                                    swiper3.slideToLoop(idx, 600);
+                                });
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </section>
         <section></section>
         <section></section>
 

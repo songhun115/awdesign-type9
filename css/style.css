@@ -116,6 +116,15 @@ img{vertical-align: bottom;}
     .room-preivew .box .main-rooms .room .disc{margin-left: 20px; margin-top: 15px;}
     .room-preivew .box .main-rooms .room .disc h5{font-size:24px ; margin-bottom: 10px;}
     .room-preivew .box .main-rooms .room .disc h5 b{font-size:30px ;}
-    .room-preivew .box .main-rooms .room .disc p{margin-left: 0; font-size: 14px;  margin-bottom: 20px;}
-    
+    .room-preivew .box .main-rooms .room .disc p{margin-left: 0; font-size: 14px;  margin-bottom: 20px;}    
+}
+
+.background-sec .box {position: relative;}
+.background-sec .box .txt{position:absolute ; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; text-align: center; font-weight: 200; line-height: 1.5; width: 100%;}
+.background-sec .box .thumbnail img{width: 100%;}
+
+@media(max-width:1240px){
+    .background-sec {height: 70vh;}
+    .background-sec .box, .background-sec .box .thumbnail {height: 100%;}
+    .background-sec .box .thumbnail img{height: 100%; object-fit: cover;}
 }

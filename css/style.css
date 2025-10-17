@@ -170,3 +170,19 @@ img{vertical-align: bottom;}
 @media(max-width:1240px){
     .visual-area .box .thumbnail img{height: 350px;}
 }
+
+#map .map-info{padding:200px 0; background-color: #000; color: #fff;}
+#map .map-info .box{display: flex; gap: 100px; align-items: center; max-width: 1500px; margin: 0 auto;}
+#map .map-info .box .thumbnail {display: flex;}
+#map .map-info .box .thumbnail img {max-width: 745px; width: 100%;}
+#map .map-info .box .thumbnail .ver-txt{display: flex; flex-direction: column; font-size: 30px; line-height: 1.1; margin-top: 40px; margin-left: 40px; font-weight: 200;}
+#map .map-info .box .txt span{font-size:14px ; margin-bottom: 30px;}
+#map .map-info .box .txt p b{font-weight: 700; margin-bottom: 10px;}
+
+
+@media(max-width:1240px){
+    #map .map-info .box{flex-direction: column; align-items: flex-start; padding: 20px; gap: 30px;}
+    #map .map-info .box .thumbnail{flex-direction: column;}
+    #map .map-info .box .thumbnail .ver-txt{flex-direction: row; margin-left: 0;  margin-top: 30px; font-size: 24px;}
+    #map .map-info .box .txt span{margin-bottom: 15px;}
+}

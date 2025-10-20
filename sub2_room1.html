@@ -51,52 +51,41 @@
             </nav>
         </div>
     </header>
-    <main id="map">
+    <main id="room">
         <section class="visual-area">
             <div class="box">
-                <div class="thumbnail"><img src="img/map/map1.jpg" alt=""></div>
-                <div class="txt">
-                    <h4>오시는길</h4>
-                    <p>한 번도 경험해 본 적 없는 새로운 시간과 공간</p>
-                </div>
-            </div>
-
-        </section>
-        <section class="map-info">
-            <div class="box">
-                <div class="thumbnail">
-                    <div class="img">
-                        <img src="img/map/map2.jpg" alt="">
+                <div class="swiper visual-silder">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="thumbnail"><img src="img/room/room1_1.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail"><img src="img/room/room1_2.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail"><img src="img/room/room1_3.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail"><img src="img/room/room1_4.jpg" alt=""></div>
+                        </div>
+                        
                     </div>
-                    <div class="ver-txt">
-                        <span>오</span>
-                        <span>시</span>
-                        <span>는</span>
-                        <span>길</span>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="txt">
-                    <span>네비게이션 이용시</span>
-                    <p><b>도로명 주소 : </b> 대전광역시 서구 문예로 15, 701호(탄방동) 언제나디자인</p>
-                    <p><b>지번 주소 : </b> 대전광역시 서구 탄방동 732 701호(언제나디자인)</p>
-                </div>
-            </div>
-        </section>
-        <section class="map-area">
-            <div class="box">
-                <div id="daumRoughmapContainer1760680923808" class="root_daum_roughmap root_daum_roughmap_landing">
-                </div>
-                <script charset="UTF-8" class="daum_roughmap_loader_script"
-                    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-                <script charset="UTF-8">
-                    new daum.roughmap.Lander({
-                        "timestamp": "1760680923808",
-                        "key": "2cejpfnpc4ui",
-                        "mapWidth": "1500",
-                        "mapHeight": "750"
-                    }).render();
+                <script>
+                    var swiper = new Swiper(".visual-silder", {
+                        pagination: {
+                            el: ".swiper-pagination",
+                            type: "fraction",
+                        },
+                        effect: 'fade',
+                        loop: true,
+                    });
                 </script>
+                <div class="txt">
+                    <h4><b>梅 </b> 매</h4>
+                    <h5>한 번도 경험해 본 적 없는 새로운 시간과 공간</h5>
+                </div>
             </div>
         </section>
     </main>
@@ -116,6 +105,7 @@
                     <li>
                         <a href="#">예약안내</a>
                     </li>
+
                 </ul>
             </div>
             <div class="logo"><img src="img/common/logo.png" alt=""></div>

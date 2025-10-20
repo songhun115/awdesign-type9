@@ -143,6 +143,7 @@ img{vertical-align: bottom;}
     .background-sec {height: 70vh;}
     .background-sec .box, .background-sec .box .thumbnail {height: 100%;}
     .background-sec .box .thumbnail img{height: 100%; object-fit: cover;}
+    .background-sec .box .txt{font-size: 14px;}
 }
 .special-preview{padding: 200px 0 100px 0; background-color: #000;}
 .special-preview .title {margin-bottom: 50px; text-align: center; color: #fff; }

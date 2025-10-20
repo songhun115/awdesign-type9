@@ -7,6 +7,10 @@
                 <ul>
                     <li>
                         <a href="sub1_tour.html">풍경</a>
+                        <ul class="sub-menu">
+                            <li><a href="sub1_tour.html">Tour</a></li>
+                            <li><a href="sub1_map.html">Location</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="sub2_room1.html">머무르다</a>

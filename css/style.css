@@ -283,3 +283,29 @@ img{vertical-align: bottom;}
   #room .room-standard .box .imgs{gap: 10px;}
   #room .room-standard .box .content .disc ul li p{flex-direction: column;}
 }
+
+
+#special{background-color: #141414;}
+#special .special-disc{padding:100px 0; background-color: #141414; color: #fff;}
+#special .special-disc .box{display: flex; gap: 50px; align-items: center; max-width: 1500px; margin: 0 auto;}
+#special .special-disc .box .thumbnail {display: flex;}
+#special .special-disc .box .thumbnail img {max-width: 745px; width: 100%;}
+#special .special-disc .box .txt{display: flex; flex-direction: column; justify-content: space-between;}
+#special .special-disc .box .txt .ver-txt{display: flex; flex-direction: column; font-size: 30px; line-height: 1.1; ;  font-weight: 200; margin-top: -50px;}
+#special .special-disc .box .txt p{line-height: 1.5; margin:50px 0 50px;}#sepcial .sepcial-disc .box .txt .reser a{padding: 15px 30px; border: 1px solid #fff; transition: 0.3s;}
+#special .special-disc .box .commit{display: flex; flex-direction: column;}
+#special .special-disc .box .commit span{margin: 5px 0;}
+@media(max-width:1240px){
+    #special .special-disc{padding: 50px 0;}
+    #special .special-disc .box{flex-direction: column; align-items: flex-start; padding: 20px; gap: 30px;}    
+    #special .special-disc .box .txt .ver-txt{flex-direction: row; margin-left: 0;  margin-top: 0px; font-size: 24px;}
+    #special .special-disc .box .txt p{font-size: 14px;margin: 25px 0;}
+    #special .special-disc .box .txt .reser a{ font-size: 14px; padding: 10px 20px;}
+}
+
+#special .special-sentence .box{max-width: 1500px; margin: 0 auto; display: flex; align-items: center;}
+#special .special-sentence .box .imgs{display: flex; justify-content: space-between;}
+#special .special-sentence .box .ver-txt{color: #fff;     writing-mode: vertical-rl;
+  text-orientation: upright;
+  
+width: 180px; display: flex; align-items: center;}

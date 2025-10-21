@@ -336,11 +336,85 @@ img{vertical-align: bottom;}
 #reser .reser-disc .box .commit span{margin: 5px 0;}
 @media(max-width:1240px){
     #reser .reser-disc{padding: 50px 0;}
-    #reser .reser-disc .box{flex-direction: column; align-items: flex-start; padding: 20px; gap: 30px;}    
+    #reser .reser-disc .box{flex-direction: column; align-items: flex-start; padding:0 20px; gap: 30px;}    
     #reser .reser-disc .box .txt .ver-txt{flex-direction: row; margin-left: 0;  margin-top: 0px; font-size: 24px;}
     #reser .reser-disc .box .txt p{font-size: 14px;}
     #reser .reser-disc .box .txt .disc-box{margin-left: 0; margin-top: 20px;}
     #reser .reser-disc .box .txt .disc-box p b {font-size: 16px; margin-right: 0;}
     #reser .reser-disc .box .txt .disc-box p{display: flex; flex-direction: column; margin: 15px 0; line-height: 1.53;}
     #reser .reser-disc .box .commit{margin-top: 0px; font-size: 14px;}
+}
+#reser .reser-table{padding: 100px 0;}
+#reser .reser-table .box{max-width:1500px ; margin: 0 auto;}
+#reser .reser-table .box .price-table{width:100%;border-collapse:collapse;table-layout:fixed;color:#ddd;font-size:15px;}
+#reser .reser-table .box .price-table caption{position:absolute; left:-9999px; }
+#reser .reser-table .box .price-table th,
+#reser .reser-table .box .price-table td{border:1px solid rgba(255,255,255,.18);padding:14px 16px;text-align:center;vertical-align:middle;}
+#reser .reser-table .box .price-table thead th{background:rgba(255,255,255,.12);color:#e7e7e7;font-weight:600;}
+#reser .reser-table .box .price-table .room{ width:12%; font-weight:600; }
+#reser .reser-table .box .price-table .people{ width:20%; color:#bfbfbf; }
+#reser .reser-table .box .price-table .season{ width:12%; font-weight:600; }
+#reser .reser-table .box .price-table td{ letter-spacing:.02em; }
+#reser .reser-table .box .reser-btn{text-align: right; color: #fff; margin-top: 50px; }
+#reser .reser-table .box .reser-btn a{padding: 15px 30px; box-sizing: border-box; border: 1px solid #fff; transition: 0.3s;}
+@media (hover){
+#reser .reser-table .box .reser-btn a:hover{background-color: #fff;color: #000;}
+}
+
+@media (max-width: 1240px){
+.table-wrap{
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.price-table{
+  min-width: 900px;        
+  border-collapse: collapse;
+  width: 100%;               
+}
+
+.price-table th, .price-table td{
+  border: 1px solid #ccc;
+  padding: 12px 14px;
+  text-align: center;
+  white-space: nowrap;      
+}
+
+.price-table thead th{
+  position: sticky;
+  top: 0;
+  background: #2a2a2a;     
+  color: #eee;
+  z-index: 1;
+  
+}
+#reser .reser-table{padding: 50px 20px;}
+#reser .reser-table .box .price-table th,
+#reser .reser-table .box .price-table td{padding: 5px; box-sizing: border-box; font-size: 14px;}
+#reser .reser-table .box .reser-btn{margin-top: 30px;}
+#reser .reser-table .box .reser-btn a{font-size: 14px;padding: 10px 20px;}}
+#reser .reser-instruction .box{display: flex; max-width: 1500px; margin: 0 auto; gap: 150px;}
+#reser .reser-instruction .box .imgs{display: flex; flex-direction: column;gap: 100px;}
+#reser .reser-instruction .box .content .con-box{color: #fff; padding-bottom: 100px ;}
+#reser .reser-instruction .box .content .con-box.one{border-bottom: 1px solid #fff;}
+#reser .reser-instruction .box .content .con-box.two{margin-top: 100px;}
+#reser .reser-instruction .box .content ul li{display: flex; margin-bottom: 50px; gap: 40px;}
+#reser .reser-instruction .box .content ul li p{line-height: 1.5; text-indent: -11px; margin-left: 11px;}
+#reser .reser-instruction .box .content .tit{margin-bottom: 50px; }
+#reser .reser-instruction .box .content .tit h4{font-size: 24px; line-height: 1.5; margin-top: 5px;}
+#reser .reser-instruction .box .content ul li h5{min-width: 122px; font-size: 18px;}
+
+
+@media(max-width:1240px){
+     #reser .reser-instruction .box{gap: 30px; flex-direction: column-reverse; padding: 0 20px;}
+    #reser .reser-instruction .box .imgs img{width: 100%;}
+    #reser .reser-instruction .box .imgs{gap: 20px;}
+    #reser .reser-instruction .box .content ul li{flex-direction: column;gap: 10px; margin-bottom: 30px;}
+    #reser .reser-instruction .box .content .tit{margin-bottom: 30px;}
+    #reser .reser-instruction .box .content ul li h5{font-size: 16px;}
+    #reser .reser-instruction .box .content ul li p{font-size: 13px;}
+    #reser .reser-instruction .box .content .con-box{padding-bottom: 50px;}
+    #reser .reser-instruction .box .content .con-box.two{margin-top: 50px; padding-bottom: 0;}
+    
 }

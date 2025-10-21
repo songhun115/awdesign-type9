@@ -418,3 +418,50 @@ img{vertical-align: bottom;}
     #reser .reser-instruction .box .content .con-box.two{margin-top: 50px; padding-bottom: 0;}
     
 }
+
+#reser .refund {padding: 100px 0;}
+#reser .refund .box{max-width: 1500px; margin: 0 auto;}
+#reser .refund .box .txt{color: #fff; margin-bottom: 50px;}
+#reser .refund .box .txt h4{font-size: 30px;}
+#reser .refund .box .txt h6{font-size: 18px; margin: 50px 0 30px 0; line-height: 1.5;}
+#reser .refund .box .txt p{font-size: 16px;line-height: 2; font-family: 'Pretendard';}
+#reser .refund .box p{color: #fff; line-height: 2; font-family: 'Pretendard';font-size: 14px;}
+#reser .refund .box .table-box{margin-bottom: 50px;}
+/* 공통 톤 */
+#reser .refund .table-wrap { margin:16px 0; }
+#reser .refund .table-scroll { -webkit-overflow-scrolling:touch; border:1px solid #2a2a2a;  }
+#reser .refund .cancel-fee-table { width:100%; border-collapse:separate; border-spacing:0; background:#181818; color:#e8e8e8; font-size:14px; }
+
+/* 데스크톱 표 */
+#reser .refund .cancel-fee-table--desktop { min-width:1100px; }
+#reser .refund .cancel-fee-table--desktop thead th { position:sticky; top:0; z-index:3; background:#2b2b2b; color:#dcdcdc; text-align:left; font-weight:600; padding:20px; white-space:nowrap; border-bottom:1px solid #3a3a3a; }
+#reser .refund .cancel-fee-table--desktop tbody th, .cancel-fee-table--desktop tbody td { padding:14px 16px; border-bottom:1px solid #2a2a2a; white-space:nowrap;  text-align: center; vertical-align: middle;}
+#reser .refund .cancel-fee-table--desktop .sticky-col { position:sticky; left:0; z-index:4; box-shadow:1px 0 0 #2a2a2a inset; }
+#reser .refund .cancel-fee-table--desktop small { opacity:.8; }
+
+/* 모바일 표(2열) */
+#reser .refund .cancel-fee-table--mobile { display:none; border:1px solid #2a2a2a; overflow:hidden; }
+#reser .refund .cancel-fee-table--mobile tbody tr { display:grid; grid-template-columns:1fr 1fr; gap:0; border-bottom:1px solid #2a2a2a; }
+
+#reser .refund .cancel-fee-table--mobile th { text-align:center; padding:14px 12px; font-weight:700; color:#e8e0d8; border-right:1px solid #2a2a2a;      background: #2b2b2b;}
+#reser .refund .cancel-fee-table--mobile td { padding:12px 12px; }
+#reser .refund .cancel-fee-table--mobile td div { line-height:1.4;   text-align: center;}
+#reser .refund .cancel-fee-table--mobile .no-refund { color:#ff5a5a; font-weight:700; }
+
+/* 반응형 전환 */
+@media (max-width: 1240px) {
+    #reser .refund .table-scroll { display:none; }
+    #reser .refund .cancel-fee-table--desktop { display:none; }
+    #reser .refund .cancel-fee-table--mobile { display:table; width:100%; }
+}
+
+
+#reser .reser-room-sec .box{position: relative;}
+#reser .reser-room-sec .box .thumbnail img{width: 100%;}
+#reser .reser-room-sec .box .txt{position: absolute; top: 50%; left: 50%; max-width: 1500px;  z-index: 1; margin: 0 auto;width: 100%;transform: translate(-50%, -50%); color: #fff;}
+#reser .reser-room-sec .box .txt h4{font-size: 35px;line-height: 1.3;}
+#reser .reser-room-sec .box .txt p{margin: 60px 0 40px 0;line-height: 1.5;}
+#reser .reser-room-sec .box .txt .reser-btn a{padding: 15px 30px; border:1px solid #fff; transition: 0.3s;}
+@media(hover){
+    #reser .reser-room-sec .box .txt .reser-btn:hover a{background-color: rgba(0,0,0,0.5); }
+}

@@ -453,6 +453,12 @@ img{vertical-align: bottom;}
     #reser .refund .table-scroll { display:none; }
     #reser .refund .cancel-fee-table--desktop { display:none; }
     #reser .refund .cancel-fee-table--mobile { display:table; width:100%; }
+    #reser .refund .box{padding: 0 20px;}
+    #reser .refund .box .txt h6{margin: 30px 0 15px 0;}
+    #reser .refund .box .table-box{margin-bottom: 30px;}
+    #reser .refund .box .txt h4{font-size: 24px;}
+    #reser .refund .box .txt h6{font-size: 16px;}
+    #reser .refund .box .txt p{font-size: 14px;}
 }
 
 
@@ -464,4 +470,13 @@ img{vertical-align: bottom;}
 #reser .reser-room-sec .box .txt .reser-btn a{padding: 15px 30px; border:1px solid #fff; transition: 0.3s;}
 @media(hover){
     #reser .reser-room-sec .box .txt .reser-btn:hover a{background-color: rgba(0,0,0,0.5); }
+}
+
+@media(max-width:1240px){
+    #reser .reser-room-sec {height: 70vh;}
+    #reser .reser-room-sec .box , #reser .reser-room-sec .box .thumbnail{height: 100%;}
+    #reser .reser-room-sec .box .thumbnail img{height: 100%; object-fit: cover;}
+    #reser .reser-room-sec .box .txt{padding: 0 20px; box-sizing: border-box;}
+    #reser .reser-room-sec .box .txt h4{font-size: 24px;}
+    #reser .reser-room-sec .box .txt p{font-size: 14px; margin:30px 0 20px 0;}
 }

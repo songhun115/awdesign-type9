@@ -1,5 +1,6 @@
 body{font-family: 'GowunBatang';}
 img{vertical-align: bottom;}
+.kangi{font-family: "adobe-myungjo-std", sans-serif;}
 #header{position: fixed; top: 0; left: 0; width: 100%; z-index: 11111; padding: 20px; box-sizing: border-box;}
 #header .header-wrap{display: flex; align-items: center; justify-content: space-between; max-width: 1500px; margin: 0 auto;}
 #header .header-wrap .nav > ul{display: flex; gap: 20px; color: #fff; }
@@ -94,7 +95,7 @@ img{vertical-align: bottom;}
 .room-preivew .box .main-rooms .room .disc{color: #fff; margin-left: 50px; display: flex; flex-direction: column; justify-content: space-between;}
 .room-preivew .box .main-rooms .room .disc h5{font-size: 30px; margin-bottom: 20px;}
 .room-preivew .box .main-rooms .room .disc h5 b{font-family: "adobe-myungjo-std", sans-serif; font-size: 50px;}
-.room-preivew .box .main-rooms .room .disc p{line-height: 1.3; margin-left: 15px;}
+.room-preivew .box .main-rooms .room .disc p{line-height: 1.3; word-spacing: -0.5em;}
 .room-preivew .box .main-rooms .room p {  writing-mode: vertical-rl; text-orientation: upright; }
 .room-preivew .box .main-rooms .room .detail{ margin-top:auto; margin-bottom: 0; border-bottom: 1px solid #fff; padding-bottom: 4px;}
 .room-preivew .box .main-rooms .room{display: flex;}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type9</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ptl6von',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+    <?php include('include/header.php'); ?>
+    <main id="map">
+        <section class="visual-area">
+            <div class="box">
+                <div class="thumbnail" ><img src="img/map/map1.jpg" alt=""></div>
+                <div class="txt">
+                    <h4 data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="100">오시는길</h4>
+                    <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="200">한 번도 경험해 본 적 없는 새로운 시간과 공간</p>
+                </div>
+            </div>
+        </section>
+        <section class="map-info">
+            <div class="box">
+                <div class="thumbnail">
+                    <div class="img" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="100">
+                        <img src="img/map/map2.jpg" alt="">
+                    </div>
+                    <div class="ver-txt">
+                        <span data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="50">오</span>
+                        <span data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="100">시</span>
+                        <span data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="150">는</span>
+                        <span data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="200">길</span>
+                    </div>
+                </div>
+                <div class="txt">
+                    <span data-aos="fade" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="50">네비게이션 이용시</span>
+                    <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="150"><b>도로명 주소 : </b> 대전광역시 서구 문예로 15, 701호(탄방동) 언제나디자인</p>
+                    <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="150"><b>지번 주소 : </b> 대전광역시 서구 탄방동 732 701호(언제나디자인)</p>
+                </div>
+            </div>
+        </section>
+        <section class="map-area" >
+            <div class="box" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="100">
+                <div id="daumRoughmapContainer1760680923808" class="root_daum_roughmap root_daum_roughmap_landing">
+                </div>
+                <script charset="UTF-8" class="daum_roughmap_loader_script"
+                    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp": "1760680923808",
+                        "key": "2cejpfnpc4ui",
+                        "mapWidth": "1500",
+                        "mapHeight": "750"
+                    }).render();
+                </script>
+            </div>
+        </section>
+    </main>
+    <?php include('include/footer.php'); ?>
+</body>
+
+</html>

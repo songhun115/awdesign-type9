@@ -31,13 +31,40 @@
     <main id="special">
         <section class="visual-area">
             <div class="box">
-                <div class="thumbnail"><img src="img/special/1.jpg" alt=""></div>
-                <div class="txt" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="100">
-                    <h4>자쿠지</h4>
+                <div class="swiper visual-silder">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="thumbnail"><img src="img/special/1.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail"><img src="img/room/room1_2.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail"><img src="img/room/room1_3.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="thumbnail"><img src="img/room/room1_4.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".visual-silder", {
+                        pagination: {
+                            el: ".swiper-pagination",
+                            type: "fraction",
+                        },
+                        effect: 'fade',
+                        loop: true,
+                    });
+                </script>
+                <div class="txt" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="100">  
+                     <h4>자쿠지</h4>
                     <p>한 번도 경험해 본 적 없는 새로운 시간과 공간</p>
                 </div>
             </div>
         </section>
+     
         <section class="special-disc">
             <div class="box">
                 <div class="thumbnail">
@@ -78,7 +105,15 @@
                 </div>
             </div>
         </section>
-        <?php include('include/background-sec.php'); ?>
+        <section class="background-sec">
+            <div class="box">
+                <div class="thumbnail" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="100"><img src="img/special/special-background-sec.jpg" alt=""></div>
+                <div class="txt" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="100">
+                    <h4><b>悠然 </b> 유연</h4>
+                    <p>고요함과 아늑함이 공존하다</p>
+                </div>
+            </div>
+        </section>
         <?php include('include/special-preview.php'); ?>
     </main>
     <?php include('include/footer.php'); ?>

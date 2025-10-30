@@ -106,7 +106,7 @@ header.active ul li a{color: #000;}
 }
 
 .room-preivew{background-color: #141414; padding: 200px 0;}
-.room-preivew .title{margin-left:150px; color: #fff; margin-bottom: 50px;}
+.room-preivew .title{margin-left:10.5%; color: #fff; margin-bottom: 50px;}
 .room-preivew .title h4{ font-size: 40px; margin-bottom: 10px;}
 .room-preivew .title p{}
 .room-preivew .box .main-rooms { position: relative;  height: 600px;}
@@ -140,7 +140,7 @@ header.active ul li a{color: #000;}
 }
 .room-preivew .box  .thumbnail img{width: 100%;}
 /* 컨테이너 레이아웃 유지 */
-.room-preivew .box .slide-box{display:flex; align-items:flex-end; gap:50px; margin-left:150px;}
+.room-preivew .box .slide-box{display:flex; align-items:flex-end; gap:50px; margin-left:10.5%}
 .room-preivew .box .slide-box > div{width:50%;}
 
 /* 메인 영역의 비율 고정(깜빡임 방지용, 원하는 비율로 조정) */
@@ -154,7 +154,9 @@ header.active ul li a{color: #000;}
   .room-preivew .box .main-rooms .room { transition: none; }
   .room-preivew .box .main-rooms .thumbnail img { transition: none;  }
 }
-
+@media(min-width:1921px){
+    .room-preivew .title, .room-preivew .box .slide-box{margin-left: 18.5%;}
+}
 @media(max-width:1240px){
     .room-preivew{padding: 50px 0;}
     .room-preivew .box .slide-box{flex-direction: column; margin-left: 0; gap: 20px;}

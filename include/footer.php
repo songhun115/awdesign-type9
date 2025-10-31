@@ -22,7 +22,7 @@
                 <a href="tel:010-1234-5678">010-1234-5678</a>
             </div>
             <div class="info">
-                <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="200">주소: 대전광역시 서구 문예로 15, 701호(탄방동) 언제나디자인 ㅣ 사업자번호: 000-00-00000(대표:가나다) ㅣ 농어촌민박번호: 대전-0000-0000호</p>
+                <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="200">주소: 대전광역시 서구 문예로 15, 701호(탄방동) 언제나디자인 ㅣ <br class="mb-obj"> 사업자번호: 000-00-00000(대표:가나다) ㅣ<br class="mb-obj"> 농어촌민박번호: 대전-0000-0000호</p>
                 <div class="copy" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="200">
                     <p>copyright reserved. photo &amp; designed by <a href="http://www.always-design.com" target="_blank" class="icon-aw_logo_svg">언제나,디자인</a> </p>
                 </div>
